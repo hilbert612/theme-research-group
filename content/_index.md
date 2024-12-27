@@ -8,8 +8,7 @@ sections:
   - block: hero
     content:
       title: |
-        Wowchemy
-        Research Group
+        Advanced Chemistry and Materials for Solar Energy
       image:
         filename: welcome.jpg
       text: |

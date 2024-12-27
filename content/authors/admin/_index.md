@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: ZHU Zonglong
 
 # Full Name (for SEO)
 first_name: Nelson
