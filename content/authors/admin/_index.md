@@ -41,7 +41,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'zonglzhu@cityu.edu.hk'
+    link: ' zonglzhu@cityu.edu.hk '
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.com.ua/citations?user=_HSF3-oAAAAJ&hl=en 
