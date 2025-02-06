@@ -3,8 +3,8 @@
 title: ZHU Zonglong
 
 # Full Name (for SEO)
-first_name: Nelson
-last_name: Bighetti
+first_name: Zonglong
+last_name: Zhu
 
 # Is this the primary user of the site?
 superuser: true
@@ -14,7 +14,7 @@ role: Professor of Artificial Intelligence
 
 # Organizations/Affiliations
 organizations:
-  - name: Stanford University
+  - name: City University of Hongkong
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
