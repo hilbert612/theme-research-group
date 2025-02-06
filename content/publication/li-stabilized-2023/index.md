@@ -12,8 +12,8 @@ authors:
 - Shuai Li
 - Jianqiu Gong
 - Joseph M. Luther
-- Zhong’an Li
-- Zonglong Zhu
+- Zhongan Li
+- Zonglong Zhu*
 date: '2023-10-01'
 publishDate: '2025-02-06T07:06:34.981175Z'
 publication_types:
