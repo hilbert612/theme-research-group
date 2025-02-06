@@ -15,27 +15,24 @@ role: Professor of Chemistry
 # Organizations/Affiliations
 organizations:
   - name: City University of Hongkong
-    url: ''
+    url: 'https://www.cityu.edu.hk/chem/people/academic-staff/ZZHU'
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: 
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Materials innovation and interfacial engineering
+  - Renewable energy
+  - Nanotechnology
 
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+    - course: PhD in Chemistry
+      institution: Hong Kong University of Science and Technology (HKUST)
+      year: 2015
+    - course: BSc in Chemistry
+      institution: Nanjing University (China)
+      year: 2010
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -58,7 +55,7 @@ social:
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ''
+email: 'zonglzhu@cityu.edu.hk'
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
@@ -69,6 +66,6 @@ user_groups:
   - Principal Investigators
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Dr. Zhu obtained his B.S. degree (Chemistry) in 2010 from Nanjing University (China). In 2015, he earned his Ph.D. degree from Hong Kong University of Science and Technology (HKUST). Then he moved to the department of materials science and engineering in University of Washington, Seattle and worked as a postdoctoral fellow during 2015-2017. He moved back to HKUST as visiting scholar in 2017. Dr. Zhu joined the City University of Hong Kong as an Assistant Professor in June 2018.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+His research mainly focuses on the design inorganic/organic materials, as well connecting the materials synthesis, physical properties and device performance for optoelectronics application. The current application interests include solar cells, transistors, light-emitting diodes, and electrochemical devices (e.g. batteries, supercapacitors).
