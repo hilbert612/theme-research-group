@@ -4,10 +4,10 @@ type: landing
 # Listing view
 view: citation
 sections:
-  - block: collection
+  - block: Publication
     id: posts
     content:
-      title: Recent Posts
+      title: Recent Publication
       subtitle: ''
       text: 'Check out my recent blog posts below!'
       # Choose how many pages you would like to display (0 = all pages)
