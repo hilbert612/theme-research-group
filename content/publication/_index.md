@@ -4,10 +4,10 @@ type: landing
 # Listing view
 view: citation
 sections:
-  - block: Publication
+  - block: collection
     id: posts
     content:
-      title: Recent Publication
+      title: Recent Posts
       subtitle: ''
       text: 'Check out my recent blog posts below!'
       # Choose how many pages you would like to display (0 = all pages)
@@ -16,7 +16,7 @@ sections:
       filters:
         # The folders to display content from
         folders:
-          - post
+          - publication
         author: ""
         category: ""
         tag: ""
@@ -41,3 +41,4 @@ banner:
   caption: ''
   image: ''
 ---
+
