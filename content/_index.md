@@ -14,7 +14,7 @@ sections:
       text: |
         <br>
         
-        The **Wowchemy Research Group** has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
+        The **AIMS Research Group** has been a center of excellence for research and innovation in Materials innovation and interfacial engineering, Renewable energy, and Nanotechnology since its founding in 2018
   
   - block: collection
     content:
