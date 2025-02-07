@@ -10,7 +10,6 @@ authors:
   - Zonglong Zhu
 publication: '*Science*'
 year: '2024'
-doi: 10.1126/science.adq8385
 featured: true
 weight: 1
 abstract: Robust contact schemes that boost stability and simplify the production
@@ -38,10 +37,10 @@ links:
 tags:
   - Perovskite Solar Cells
   - High Impact
-summary: "Breakthrough research achieving >95% PCE retention after 2000 hours in perovskite solar cells through innovative ALD-SnOx technique"
+summary: "Breakthrough research achieving >95% PCE retention after 2000 hours in perovskite solar cells through innovative ALD-SnOx technique. Our devices exhibit superior stability over conventional p-i-n PSCs with certified T97 lifetime exceeding 1000 hours."
 image:
   caption: 'Featured image'
   focal_point: Smart
   preview_only: false
-  filename: featured.jpg  # Make sure this image exists in the same directory
+  filename: featured.jpg
 ---

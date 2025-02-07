@@ -1,0 +1,47 @@
+{{ $item := .item }}
+<div class="showcase-item" style="display: flex; margin-bottom: 2rem; gap: 2rem;">
+  <!-- Left content: Title, Summary, Authors, Journal -->
+  <div style="flex: 2;">
+    <!-- Title -->
+    <h3 class="article-title mb-1 mt-0">
+      <a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a>
+    </h3>
+
+    <!-- Summary below title -->
+    {{ with $item.Params.summary }}
+      <div class="article-summary" style="color: #666; margin: 0.5rem 0; font-size: 0.9em;">
+        {{ . | markdownify }}
+      </div>
+    {{ end }}
+
+    <!-- Authors -->
+    <div class="article-authors" style="color: #1a73e8;">
+      {{ with $item.Params.authors }}
+        {{ delimit . ", " }}
+      {{ end }}
+    </div>
+
+    <!-- Journal -->
+    <div class="article-metadata" style="color: #006621; margin-top: 0.3rem;">
+      {{ with $item.Params.publication }}
+        {{ . | markdownify }}
+      {{ end }}
+      {{ if $item.Params.year }}
+        ({{ $item.Params.year }})
+      {{ end }}
+    </div>
+  </div>
+
+  <!-- Right side image -->
+  <div style="flex: 1;">
+    {{ $image := "" }}
+    {{ with $item.Params.image }}
+      {{ $image = .filename }}
+    {{ end }}
+    {{ if $image }}
+      <img src="{{ printf "publication/%s/%s" $item.File.TranslationBaseName $image | relURL }}"
+           alt="Featured image"
+           style="width: 100%; height: auto; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">
+    {{ end }}
+  </div>
+</div>
