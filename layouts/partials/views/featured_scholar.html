@@ -1,41 +1,53 @@
 {{/* Based on scholar view but adds summary between title and authors */}}
 
-<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+<div class="pub-list-item view-citation featured-pub-item" style="margin-bottom: 2rem">
+  <div class="featured-pub-content">
+    <div class="pub-info">
+      <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
-  {{/* Title */}}
-  <span class="article-metadata li-cite-author">
-    <span>{{.Title}}</span>
-  </span>
+      {{/* Title */}}
+      <span class="article-metadata li-cite-author">
+        <span>{{.Title}}</span>
+      </span>
 
-  {{/* Summary */}}
-  {{with .Params.summary}}
-  <div class="article-summary">
-    {{.}}
-  </div>
-  {{end}}
+      {{/* Summary */}}
+      {{with .Params.summary}}
+      <div class="article-summary">
+        {{.}}
+      </div>
+      {{end}}
 
-  {{/* Authors */}}
-  <span class="article-metadata li-cite-author">
-    {{ $authors := .Params.authors }}
-    {{ if $authors }}
-      {{ range $index, $author := $authors }}
-        {{- if $index }}, {{ end -}}
-        {{- $author -}}
-      {{ end }}
+      {{/* Authors */}}
+      <span class="article-metadata li-cite-author">
+        {{ $authors := .Params.authors }}
+        {{ if $authors }}
+          {{ range $index, $author := $authors }}
+            {{- if $index }}, {{ end -}}
+            {{- $author -}}
+          {{ end }}
+        {{ end }}
+      </span>
+
+      {{/* Publication name */}}
+      {{ if .Params.publication }}
+      <span class="article-metadata li-cite-journal">
+        {{.Params.publication | markdownify}}
+      </span>
+      {{end}}
+
+      {{/* Links */}}
+      <div class="btn-links">
+        {{ partial "page_links" (dict "page" . "is_list" 1) }}
+      </div>
+    </div>
+
+    {{/* Featured Image */}}
+    {{ $image := .Params.image }}
+    {{ if and $image $image.filename }}
+    <div class="featured-pub-image">
+      {{ $img_src := (path.Join "publication" .File.ContentBaseName $image.filename) }}
+      <img src="{{ (resources.Get $img_src).RelPermalink }}" alt="Featured image">
+    </div>
     {{ end }}
-  </span>
-
-  {{/* Publication name */}}
-  {{ if .Params.publication }}
-  <span class="article-metadata li-cite-journal">
-    {{.Params.publication | markdownify}}
-  </span>
-  {{end}}
-
-  {{/* Links */}}
-  <div class="btn-links">
-    {{ partial "page_links" (dict "page" . "is_list" 1) }}
   </div>
-
 </div>

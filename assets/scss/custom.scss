@@ -3,3 +3,24 @@
   font-size: 0.9rem;
   color: rgba(0, 0, 0, 0.8);
 }
+
+.featured-pub-item {
+  .featured-pub-content {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .pub-info {
+    flex: 1;
+  }
+
+  .featured-pub-image {
+    flex: 0 0 200px;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+  }
+}
