@@ -1,37 +1,18 @@
 ---
 title: Long-term stability in perovskite solar cells through atomic layer deposition of tin oxide
 authors:
-- Danpeng Gao
-- Bo Li
-- Qi Liu
-- Chunlei Zhang
-- Zexin Yu
-- Shuai Li
-- Jianqiu Gong
-- Liangchen Qian
-- Francesco Vanin
-- Kelly Schutt
-- Melissa A. Davis
-- Axel F. Palmstrom
-- Steven P. Harvey
-- Nicholas J. Long
-- Joseph M. Luther
-- Xiao Cheng Zeng
-- Zonglong Zhu
-date: '2024-10-01'
-publishDate: '2025-02-07T02:45:00.244490Z'
-publication_types:
-- article-journal
-publication: '*Science*'    # Journal name in italics
-publication_types: ['2']    # '2' represents journal articles
-publication_short: 'Science'  # Short version of journal name
+  - Danpeng Gao
+  - Bo Li
+  - Qi Liu
+  - Shuai Li
+  - Jianqiu Gong
+  - Liangchen Qian
+  - Zonglong Zhu
+publication: '*Science*'
+year: '2024'
 doi: 10.1126/science.adq8385
-highlight: true   # 确保为 true
-featured: true    # Essential for featuring
-featured_only: true # Add this line
-weight: 1         # Controls ordering
-categories:
-  - Featured Research
+featured: true
+weight: 1
 abstract: Robust contact schemes that boost stability and simplify the production
   process are needed for perovskite solar cells (PSCs). We codeposited perovskite
   and hole-selective contact while protecting the perovskite to enable deposition

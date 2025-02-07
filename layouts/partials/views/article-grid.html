@@ -1,0 +1,36 @@
+{{ $item := .item }}
+<div class="article-grid-item" style="margin-bottom: 1.5rem;">
+  <!-- Title - Bold and larger -->
+  <div style="font-size: 1.1em; margin-bottom: 0.3em;">
+    <strong>
+      {{ if $item.Params.doi }}
+        <a href="https://doi.org/{{ $item.Params.doi }}" target="_blank" style="color: #1a73e8; text-decoration: none;">
+          {{ $item.Title }}
+        </a>
+      {{ else }}
+        {{ $item.Title }}
+      {{ end }}
+    </strong>
+  </div>
+
+  <!-- Authors - Gray color -->
+  <div style="color: #545454; margin-bottom: 0.2em;">
+    {{ with $item.Params.authors }}
+      {{ delimit . ", " }}
+    {{ end }}
+  </div>
+
+  <!-- Journal - Bold with year -->
+  <div style="color: #006621; font-weight: 500;">
+    {{ with $item.Params.publication }}
+      {{ . | markdownify }}
+    {{ end }}
+    {{ if $item.Params.year }}
+      - {{ $item.Params.year }}
+    {{ else }}
+      {{ with $item.Date }}
+        - {{ dateFormat "2006" . }}
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
