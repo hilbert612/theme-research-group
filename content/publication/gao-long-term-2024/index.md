@@ -25,8 +25,9 @@ publication_types:
 publication: '*Science*'
 doi: 10.1126/science.adq8385
 highlight: true   # 确保为 true
-featured: true    # Mark as featured
-weight: 1         # Control ordering in featured section
+featured: true    # Essential for featuring
+featured_only: true # Add this line
+weight: 1         # Controls ordering
 categories:
   - Featured Research
 abstract: Robust contact schemes that boost stability and simplify the production
@@ -52,10 +53,8 @@ links:
 - name: URL
   url: https://www.science.org/doi/10.1126/science.adq8385
 tags:
-  - Featured     # Add Featured tag
   - Perovskite Solar Cells
   - High Impact
-  - Featured
 summary: "Breakthrough research achieving >95% PCE retention after 2000 hours in perovskite solar cells through innovative ALD-SnOx technique"
 image:
   caption: 'Perovskite Solar Cell Structure'

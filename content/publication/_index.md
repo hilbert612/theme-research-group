@@ -13,16 +13,13 @@ sections:
       filters:
         folders:
           - publication
-        tag: Featured          # Add tag filter
-        featured: true         # Keep featured flag
-      count: 0                # Show all featured items
-      sort_by: 'weight'       # Sort by weight
-      sort_ascending: true    # Show lowest weight first
+        featured_only: true    # Changed this line
+      sort_by: 'weight'
+      sort_ascending: true
     design:
-      columns: '1'
-      view: google_scholar
-      spacing:
-        padding: ["20px", "0", "20px", "0"]
+      columns: '2'
+      view: article-grid    # Changed view style
+      flip_alt_rows: false
 
   # Recent publications section
   - block: collection
@@ -32,12 +29,12 @@ sections:
       filters:
         folders:
           - publication
-        exclude_featured: true   # Exclude featured articles
+        exclude_featured: true
       sort_by: 'date'
       sort_ascending: false
     design:
-      columns: '1'
-      view: google_scholar
+      columns: '2'
+      view: citation
       spacing:
         padding: ["20px", "0", "20px", "0"]
 
