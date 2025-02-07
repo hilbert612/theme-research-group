@@ -4,21 +4,6 @@ type: landing
 cms_exclude: true
 
 sections:
-  # 索引系统
-  - block: tag_cloud
-    content:
-      title: Publication Index
-      # 选择要显示的分类方式
-      taxonomy: publication_types
-      # 显示年份标签
-      show_years: true
-      # 期刊标签
-      show_venue: true
-    design:
-      columns: '1'
-      font_size_min: 0.7
-      font_size_max: 1.5
-
   # 特色论文部分
   - block: collection
     id: featured

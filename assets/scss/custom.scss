@@ -74,39 +74,3 @@
 .pub-list-item:hover {
   background-color: #f8f9fa;
 }
-
-/* 索引样式 */
-.pub-filters {
-  margin-bottom: 2rem;
-  padding: 1rem;
-  background: #f8f9fa;
-  border-radius: 4px;
-  
-  .filter-title {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .filter-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    
-    .filter-tag {
-      padding: 0.2rem 0.8rem;
-      border-radius: 15px;
-      background: white;
-      border: 1px solid #ddd;
-      cursor: pointer;
-      
-      &:hover {
-        background: #e9ecef;
-      }
-      
-      &.active {
-        background: #2154a0;
-        color: white;
-      }
-    }
-  }
-}
