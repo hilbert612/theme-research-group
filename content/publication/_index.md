@@ -1,47 +1,42 @@
 ---
 title: Publications
+type: landing
 cms_exclude: true
 
-# View.
-#   1 = List
-#   2 = Compact
-#   3 = Card
-#   4 = Citation
-view: 4
-
-# Optional banner image (relative to `static/media/` folder).
-banner:
-  caption: ""
-  image: ""
-
 sections:
-  # Featured/Highlighted publications
+  # Featured publications section
   - block: collection
     id: featured
     content:
       title: Featured Publications
+      text: "Our key research highlights"
       filters:
         folders:
           - publication
-        featured_only: true
+        tag: Featured
     design:
       columns: '2'
-      view: card
+      view: showcase
       flip_alt_rows: false
 
-  # Recent publications
+  # Recent publications section
   - block: collection
     content:
       title: Recent Publications
+      text: "Discover our latest research"
       filters:
         folders:
           - publication
-        exclude_featured: true
-      count: 0
-      offset: 0
-      order: desc
+        tag: 
+          - not Featured
+      sort_by: date
+      sort_ascending: false
     design:
       columns: '2'
       view: citation
+
+banner:
+  caption: ""
+  image: ""
 ---
 

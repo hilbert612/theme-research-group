@@ -50,8 +50,8 @@ links:
 - name: URL
   url: https://www.science.org/doi/10.1126/science.adq8385
 tags:
-  - Perovskite Solar Cells
   - Featured
+  - Perovskite Solar Cells
   - High Impact
 summary: "Breakthrough research achieving >95% PCE retention after 2000 hours in perovskite solar cells through innovative ALD-SnOx technique"
 image:
