@@ -13,13 +13,13 @@ sections:
       filters:
         folders:
           - publication
-        featured: true     # Add this line
-        exclude_featured: false  # Add this line
-      sort_by: 'weight'    # Sort by weight parameter
-      sort_ascending: true  # Lower weight appears first
+        tag: Featured      # 添加标签过滤
+        featured: true     # 保持 featured 标记
+      sort_by: 'weight'
+      sort_ascending: true
     design:
       columns: '2'
-      view: showcase
+      view: citation
       flip_alt_rows: false
 
   # Recent publications section
@@ -30,8 +30,7 @@ sections:
       filters:
         folders:
           - publication
-        featured: false    # Add this line
-        exclude_featured: true   # Add this line
+        exclude_featured: true   # 排除 featured 文章
       sort_by: 'date'
       sort_ascending: false
     design:
