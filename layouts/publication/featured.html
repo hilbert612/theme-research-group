@@ -10,10 +10,10 @@
   {{end}}
 
   <div class="article-metadata">
-    // ...existing code...
+    {{ partial "page_metadata" (dict "page" . "is_list" 1) }}
   </div>
 
   <div class="btn-links">
-    // ...existing code...
+    {{ partial "page_links" (dict "page" . "is_list" 1) }}
   </div>
 </div>
