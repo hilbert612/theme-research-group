@@ -18,9 +18,9 @@ sections:
       sort_by: 'weight'
       sort_ascending: true
     design:
-      columns: '1'    # 改为单列以获得更好的布局
-      view: citation    # 改为 citation 而不是 featured_scholar
-      flip_alt_rows: false
+      columns: '2'    # 改为两列布局
+      view: compact    # 使用 compact 视图以获得更类似 WoS 的效果
+      flip_alt_rows: true
 
   # 最近论文部分
   - block: collection
@@ -35,9 +35,9 @@ sections:
       sort_by: 'date'
       sort_ascending: false
     design:
-      columns: '1'    # 改为单列以保持一致性
-      view: citation    # 改为 citation 而不是 scholar
-      flip_alt_rows: false
+      columns: '2'    # 改为两列布局
+      view: compact    # 统一使用 compact 视图
+      flip_alt_rows: true
 
 banner:
   caption: ""

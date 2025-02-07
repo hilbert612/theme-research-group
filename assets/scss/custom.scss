@@ -24,3 +24,34 @@
     }
   }
 }
+
+/* Publication styling to match Web of Science */
+.pub-list-item {
+  padding: 1.5rem;
+  border-bottom: 1px solid #eee;
+  
+  .pub-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #2154a0;
+  }
+  
+  .author-list {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .pub-publication {
+    font-style: italic;
+    color: #444;
+  }
+  
+  .pub-links {
+    margin-top: 0.5rem;
+  }
+}
+
+/* Hover effect */
+.pub-list-item:hover {
+  background-color: #f8f9fa;
+}
