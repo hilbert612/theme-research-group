@@ -14,6 +14,7 @@ sections:
         folders:
           - publication
         featured_only: true
+        exclude_featured: false    # 添加这行，确保不排除featured论文
       sort_by: 'weight'
       sort_ascending: true
     design:

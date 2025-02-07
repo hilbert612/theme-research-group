@@ -21,8 +21,9 @@ authors:
   - Zonglong Zhu     # 通讯作者
 publication: '*Science*'
 year: '2024'
-featured: true
-weight: 1
+featured: true    # 确保这个设置为true
+weight: 1        # 确保权重设置正确
+publishDate: '2024-01-01'  # 添加发布日期
 summary: "Breakthrough research achieving >95% PCE retention after 2000 hours in perovskite solar cells through innovative ALD-SnOx technique."
 image:
   filename: featured.jpg    # 必须与图片文件名完全匹配
