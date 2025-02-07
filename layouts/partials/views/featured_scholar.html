@@ -17,7 +17,13 @@
 
   {{/* Authors */}}
   <span class="article-metadata li-cite-author">
-    {{ partial "page_metadata_authors" . }}
+    {{ $authors := .Params.authors }}
+    {{ if $authors }}
+      {{ range $index, $author := $authors }}
+        {{- if $index }}, {{ end -}}
+        {{- $author -}}
+      {{ end }}
+    {{ end }}
   </span>
 
   {{/* Publication name */}}
