@@ -26,7 +26,7 @@ publication_types:
 publication: '*Science*'
 doi: 10.1126/science.adq8385
 highlight: true   # 确保为 true
-featured: true    # 确保为 true
+featured: true    # This is the key flag
 abstract: Robust contact schemes that boost stability and simplify the production
   process are needed for perovskite solar cells (PSCs). We codeposited perovskite
   and hole-selective contact while protecting the perovskite to enable deposition
@@ -50,7 +50,6 @@ links:
 - name: URL
   url: https://www.science.org/doi/10.1126/science.adq8385
 tags:
-  - Featured
   - Perovskite Solar Cells
   - High Impact
 summary: "Breakthrough research achieving >95% PCE retention after 2000 hours in perovskite solar cells through innovative ALD-SnOx technique"

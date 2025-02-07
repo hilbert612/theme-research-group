@@ -13,7 +13,7 @@ sections:
       filters:
         folders:
           - publication
-        tag: Featured
+        featured: true    # Use featured flag instead of tag
     design:
       columns: '2'
       view: showcase
@@ -27,9 +27,8 @@ sections:
       filters:
         folders:
           - publication
-        tag: 
-          - not Featured
-      sort_by: date
+        featured: false   # Show non-featured publications
+      sort_by: 'date'
       sort_ascending: false
     design:
       columns: '2'
