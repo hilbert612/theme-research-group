@@ -19,7 +19,7 @@ sections:
       sort_ascending: true
     design:
       columns: '1'    # 改为单列以获得更好的布局
-      view: featured_scholar  # 更改为新的视图
+      view: citation    # 改为 citation 而不是 featured_scholar
       flip_alt_rows: false
 
   # 最近论文部分
@@ -36,7 +36,7 @@ sections:
       sort_ascending: false
     design:
       columns: '1'    # 改为单列以保持一致性
-      view: scholar   # 使用类似 Google Scholar 的视图
+      view: citation    # 改为 citation 而不是 scholar
       flip_alt_rows: false
 
 banner:
