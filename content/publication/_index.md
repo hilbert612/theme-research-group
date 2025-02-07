@@ -13,12 +13,12 @@ sections:
       filters:
         folders:
           - publication
-        featured_only: true    # Changed this line
+        featured_only: true
       sort_by: 'weight'
       sort_ascending: true
     design:
       columns: '2'
-      view: article-grid    # Changed view style
+      view: article-grid
       flip_alt_rows: false
 
   # Recent publications section
@@ -30,13 +30,13 @@ sections:
         folders:
           - publication
         exclude_featured: true
+      count: 0    # Show all publications
       sort_by: 'date'
       sort_ascending: false
     design:
       columns: '2'
-      view: citation
-      spacing:
-        padding: ["20px", "0", "20px", "0"]
+      view: article-grid    # Changed to match Featured Publications
+      flip_alt_rows: false
 
 banner:
   caption: ""

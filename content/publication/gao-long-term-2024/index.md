@@ -22,7 +22,9 @@ date: '2024-10-01'
 publishDate: '2025-02-07T02:45:00.244490Z'
 publication_types:
 - article-journal
-publication: '*Science*'
+publication: '*Science*'    # Journal name in italics
+publication_types: ['2']    # '2' represents journal articles
+publication_short: 'Science'  # Short version of journal name
 doi: 10.1126/science.adq8385
 highlight: true   # 确保为 true
 featured: true    # Essential for featuring
