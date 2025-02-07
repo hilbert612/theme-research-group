@@ -1,6 +1,5 @@
 ---
-title: Stabilized hole-selective layer for high-performance inverted p-i-n perovskite
-  solar cells
+title: "Stabilized hole-selective layer for high-performance inverted p-i-n perovskite solar cells"
 authors:
 - Zhen Li
 - Xianglang Sun
@@ -16,10 +15,11 @@ authors:
 - Zonglong Zhu*
 date: '2023-10-01'
 publishDate: '2025-02-06T07:06:34.981175Z'
+weight: 2    # 添加权重
 featured: true
 publication_types:
 - article-journal
-publication: '*Science*'
+publication: "Science"    # 删除星号
 doi: 10.1126/science.ade9637
 abstract: P-i-n geometry perovskite solar cells (PSCs) offer simplified fabrication,
   greater amenability to charge extraction layers, and low-temperature processing

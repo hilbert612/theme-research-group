@@ -1,6 +1,5 @@
 ---
-title: Co-deposition of hole-selective contact and absorber for improving the processability
-  of perovskite solar cells
+title: "Co-deposition of hole-selective contact and absorber for improving the processability of perovskite solar cells"
 authors:
 - Xiaopeng Zheng
 - Zhen Li
@@ -32,7 +31,8 @@ date: '2023-01-01'
 publishDate: '2025-02-07T02:45:00.377435Z'
 publication_types:
 - article-journal
-publication: '*Nature Energy*'
+publication: "Nature Energy"
+weight: 4    # 添加权重
 featured: true
 doi: '10.1038/s41560-023-01227-6'
 links:

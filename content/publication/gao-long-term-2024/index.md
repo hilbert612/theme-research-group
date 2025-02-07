@@ -25,6 +25,7 @@ publishDate: '2024-02-07T00:00:00Z'
 
 # 设置为特色文章
 featured: true
+weight: 1    # 添加权重，最小数字最靠前
 
 # Publication type.
 publication_types: ["2"]

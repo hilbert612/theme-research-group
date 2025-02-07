@@ -1,6 +1,5 @@
 ---
-title: Organometallic-functionalized interfaces for highly efficient inverted perovskite
-  solar cells
+title: "Organometallic-functionalized interfaces for highly efficient inverted perovskite solar cells"
 authors:
 - Zhen Li
 - Bo Li
@@ -13,9 +12,10 @@ authors:
 date: '2022-04-01'
 publishDate: '2025-02-07T02:45:00.493765Z'
 featured: true
+weight: 3
 publication_types:
 - article-journal
-publication: '*Science*'
+publication: "Science"
 doi: 10.1126/science.abm8566
 abstract: Further enhancing the performance and stability of inverted perovskite solar
   cells (PSCs) is crucial for their commercialization. We report that the functionalization
