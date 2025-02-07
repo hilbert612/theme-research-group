@@ -34,11 +34,28 @@
     font-weight: 600;
     font-size: 1.1rem;
     color: #2154a0;
+    
+    a {
+      color: #2154a0;
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .pub-venue {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #087f23;  // 期刊名称使用绿色
   }
   
   .author-list {
     font-size: 0.9rem;
     color: #666;
+    margin-bottom: 0.3rem;
   }
   
   .pub-publication {

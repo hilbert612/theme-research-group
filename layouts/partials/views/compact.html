@@ -1,0 +1,36 @@
+{{ $item := .item }}
+
+<div class="pub-list-item">
+  <div class="pub-title">
+    {{/* 标题直接链接到 DOI */}}
+    {{ if $item.Params.doi }}
+      <a href="https://doi.org/{{ $item.Params.doi }}" target="_blank">{{ $item.Title }}</a>
+    {{ else }}
+      <a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a>
+    {{ end }}
+  </div>
+
+  {{/* 作者列表 */}}
+  <div class="author-list">
+    {{ with $item.Params.authors }}
+      {{ delimit . ", " }}
+    {{ end }}
+  </div>
+
+  {{/* 期刊信息 */}}
+  {{ with $item.Params.publication }}
+    <div class="pub-venue">
+      {{ . }}
+      {{- if $item.Params.publication_short -}}
+        ({{ $item.Params.publication_short }})
+      {{- end -}}
+    </div>
+  {{ end }}
+
+  {{/* 其他元数据 */}}
+  <div class="pub-metadata">
+    {{ if $item.Params.doi }}
+      <span class="pub-doi">DOI: {{ $item.Params.doi }}</span>
+    {{ end }}
+  </div>
+</div>
