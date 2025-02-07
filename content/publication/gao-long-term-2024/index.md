@@ -40,8 +40,8 @@ tags:
   - High Impact
 summary: "Breakthrough research achieving >95% PCE retention after 2000 hours in perovskite solar cells through innovative ALD-SnOx technique"
 image:
-  caption: 'Perovskite Solar Cell Structure'
-  focal_point: 'Center'
+  caption: 'Featured image'
+  focal_point: Smart
   preview_only: false
-  filename: featured.jpg  # 您需要添加一张代表性的图片
+  filename: featured.jpg  # Make sure this image exists in the same directory
 ---

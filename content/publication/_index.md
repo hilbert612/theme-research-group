@@ -18,7 +18,7 @@ sections:
       sort_ascending: true
     design:
       columns: '2'
-      view: article-grid
+      view: showcase    # Changed to showcase to display images
       flip_alt_rows: false
 
   # Recent publications section
@@ -35,7 +35,7 @@ sections:
       sort_ascending: false
     design:
       columns: '2'
-      view: article-grid    # Changed to match Featured Publications
+      view: citation    # Changed to citation for Google Scholar style
       flip_alt_rows: false
 
 banner:
