@@ -1,0 +1,26 @@
+{{ $item := .item }}
+<div class="scholar-pub" style="margin-bottom: 1.5rem;">
+  <!-- 论文标题 -->
+  <h3 style="font-size: 1rem; margin: 0 0 0.3rem 0;">
+    <a href="{{ $item.RelPermalink }}" style="color: #1a73e8; text-decoration: none;">
+      {{ $item.Title }}
+    </a>
+  </h3>
+  
+  <!-- 作者列表 -->
+  <div style="color: #4d4d4d; font-size: 0.9rem; margin-bottom: 0.2rem;">
+    {{ with $item.Params.authors }}
+      {{ delimit . ", " }}
+    {{ end }}
+  </div>
+  
+  <!-- 期刊信息 -->
+  <div style="color: #006621; font-size: 0.9rem;">
+    {{ with $item.Params.publication }}
+      {{ . | markdownify }}
+    {{ end }}
+    {{ if $item.Params.year }}
+      ({{ $item.Params.year }})
+    {{ end }}
+  </div>
+</div>

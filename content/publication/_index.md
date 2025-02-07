@@ -4,7 +4,7 @@ type: landing
 cms_exclude: true
 
 sections:
-  # Featured publications section
+  # 特色论文部分
   - block: collection
     id: featured
     content:
@@ -17,11 +17,11 @@ sections:
       sort_by: 'weight'
       sort_ascending: true
     design:
-      columns: '2'
-      view: showcase    # Changed to showcase to display images
+      columns: '1'    # 改为单列以获得更好的布局
+      view: featured  # 使用自定义视图
       flip_alt_rows: false
 
-  # Recent publications section
+  # 最近论文部分
   - block: collection
     content:
       title: Recent Publications
@@ -30,12 +30,12 @@ sections:
         folders:
           - publication
         exclude_featured: true
-      count: 0    # Show all publications
+      count: 0    # 显示所有论文
       sort_by: 'date'
       sort_ascending: false
     design:
-      columns: '2'
-      view: citation    # Changed to citation for Google Scholar style
+      columns: '1'    # 改为单列以保持一致性
+      view: scholar   # 使用类似 Google Scholar 的视图
       flip_alt_rows: false
 
 banner:

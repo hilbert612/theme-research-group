@@ -10,7 +10,7 @@ featured: true
 weight: 1
 summary: "Breakthrough research achieving >95% PCE retention after 2000 hours in perovskite solar cells through innovative ALD-SnOx technique."
 image:
-  filename: featured.jpg
+  filename: featured.jpg    # 确保图片文件名为 featured.jpg
   caption: 'Device structure and performance'
   focal_point: Smart
   preview_only: false
