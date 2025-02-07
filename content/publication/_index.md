@@ -13,14 +13,14 @@ sections:
       filters:
         folders:
           - publication
-        tag: Featured      # 添加标签过滤
-        featured: true     # 保持 featured 标记
-      sort_by: 'weight'
-      sort_ascending: true
+        featured: true
+      sort_by: 'date'
+      sort_ascending: false
     design:
-      columns: '2'
-      view: citation
-      flip_alt_rows: false
+      columns: '1'    # Full width for better readability
+      view: google_scholar    # Custom citation view
+      spacing:
+        padding: ["20px", "0", "20px", "0"]
 
   # Recent publications section
   - block: collection
@@ -30,12 +30,14 @@ sections:
       filters:
         folders:
           - publication
-        exclude_featured: true   # 排除 featured 文章
+        exclude_featured: true
       sort_by: 'date'
       sort_ascending: false
     design:
-      columns: '2'
-      view: citation
+      columns: '1'    # Full width for better readability
+      view: google_scholar    # Custom citation view
+      spacing:
+        padding: ["20px", "0", "20px", "0"]
 
 banner:
   caption: ""
