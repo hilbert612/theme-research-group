@@ -1,33 +1,47 @@
 ---
-title: Long-term stability in perovskite solar cells through atomic layer deposition of tin oxide
-doi: "10.1126/science.adq8385"    # 添加 DOI
+title: "Long-term stability in perovskite solar cells through atomic layer deposition of tin oxide"
+doi: "10.1126/science.adq8385"
 authors:
-  - Danpeng Gao      # 第一作者
-  - Bo Li            # 第二作者
-  - Qi Liu           # 第三作者
-  - Chunlei Zhang    # 第四作者
-  - Zexin Yu         # 第五作者
-  - Shuai Li         # 第六作者
-  - Jianqiu Gong     # 第七作者
-  - Liangchen Qian   # 第八作者
-  - Francesco Vanin  # 第九作者
-  - Kelly Schutt     # 第十作者
-  - Melissa A. Davis # 第十一作者
-  - Axel F. Palmstrom # 第十二作者
-  - Steven P. Harvey # 第十三作者
-  - Nicholas J. Long # 第十四作者
-  - Joseph M. Luther # 第十五作者
-  - Xiao Cheng Zeng  # 第十六作者
-  - Zonglong Zhu     # 通讯作者
-publication: '*Science*'
-year: '2024'
-featured: true    # 确保这个设置为true
-weight: 1        # 确保权重设置正确
-publishDate: '2024-01-01'  # 添加发布日期
-summary: "Breakthrough research achieving >95% PCE retention after 2000 hours in perovskite solar cells through innovative ALD-SnOx technique."
-image:
-  filename: featured.jpg    # 必须与图片文件名完全匹配
-  caption: 'Device structure and performance'
-  focal_point: Smart
-  preview_only: false
+  - Danpeng Gao
+  - Bo Li
+  - Qi Liu
+  - Chunlei Zhang
+  - Zexin Yu
+  - Shuai Li
+  - Jianqiu Gong
+  - Liangchen Qian
+  - Francesco Vanin
+  - Kelly Schutt
+  - Melissa A. Davis
+  - Axel F. Palmstrom
+  - Steven P. Harvey
+  - Nicholas J. Long
+  - Joseph M. Luther
+  - Xiao Cheng Zeng
+  - Zonglong Zhu
+
+date: "2024-02-07"
+
+# 设置为特色文章
+featured: true
+
+# Publication type.
+publication_types: ["2"]
+
+# Publication name and optional abbreviated publication name.
+publication: "Science"
+publication_short: ""
+
+abstract: "Robust contact schemes that boost stability and simplify the production process are needed for perovskite solar cells (PSCs). We codeposited perovskite and hole-selective contact while protecting the perovskite to enable deposition of SnOx/Ag without the use of a fullerene. The SnOx, prepared through atomic layer deposition, serves as a durable inorganic electron transport layer. Tailoring the oxygen vacancy defects in the SnOx layer led to power conversion efficiencies (PCEs) of >25%. Our devices exhibit superior stability over conventional p-i-n PSCs, successfully meeting several benchmark stability tests."
+
+tags:
+  - Perovskite Solar Cells
+  - Atomic Layer Deposition
+  - Stability
+  - Tin Oxide
+
+# Custom links (optional).
+links:
+  - name: URL
+    url: https://www.science.org/doi/10.1126/science.adq8385
 ---
