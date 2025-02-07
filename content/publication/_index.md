@@ -13,12 +13,11 @@ sections:
       filters:
         folders:
           - publication
-        featured: true      # Primary filter
-        categories:         # Additional filter
-          - Featured Research
-      count: 0             # Show all featured items
-      sort_by: 'weight'    # Sort by weight parameter
-      sort_ascending: true # Show lowest weight first
+        tag: Featured          # Add tag filter
+        featured: true         # Keep featured flag
+      count: 0                # Show all featured items
+      sort_by: 'weight'       # Sort by weight
+      sort_ascending: true    # Show lowest weight first
     design:
       columns: '1'
       view: google_scholar
@@ -33,7 +32,7 @@ sections:
       filters:
         folders:
           - publication
-        exclude_featured: true
+        exclude_featured: true   # Exclude featured articles
       sort_by: 'date'
       sort_ascending: false
     design:
