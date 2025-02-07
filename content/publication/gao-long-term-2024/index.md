@@ -26,6 +26,7 @@ publication_types:
 publication: '*Science*'
 doi: 10.1126/science.adq8385
 highlight: true
+featured: true
 abstract: Robust contact schemes that boost stability and simplify the production
   process are needed for perovskite solar cells (PSCs). We codeposited perovskite
   and hole-selective contact while protecting the perovskite to enable deposition
@@ -48,4 +49,14 @@ abstract: Robust contact schemes that boost stability and simplify the productio
 links:
 - name: URL
   url: https://www.science.org/doi/10.1126/science.adq8385
+tags:
+  - Perovskite Solar Cells
+  - Featured
+  - High Impact
+summary: "Breakthrough research achieving >95% PCE retention after 2000 hours in perovskite solar cells through innovative ALD-SnOx technique"
+image:
+  caption: 'Perovskite Solar Cell Structure'
+  focal_point: 'Center'
+  preview_only: false
+  filename: featured.jpg  # 您需要添加一张代表性的图片
 ---
