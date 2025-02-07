@@ -1,6 +1,6 @@
 <div class="article-container">
   <h3 class="article-title mb-1 mt-3">
-    <a href="{{$link}}">{{ .Title }}</a>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
   </h3>
 
   {{with .Params.summary}}
