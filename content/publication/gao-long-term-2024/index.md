@@ -1,6 +1,5 @@
 ---
-title: Long-term stability in perovskite solar cells through atomic layer deposition
-  of tin oxide
+title: Long-term stability in perovskite solar cells through atomic layer deposition of tin oxide
 authors:
 - Danpeng Gao
 - Bo Li
@@ -26,7 +25,10 @@ publication_types:
 publication: '*Science*'
 doi: 10.1126/science.adq8385
 highlight: true   # 确保为 true
-featured: true    # This is the key flag
+featured: true    # Marks this as a featured publication
+weight: 1         # Lower number appears first in featured section
+categories:
+  - Featured Research
 abstract: Robust contact schemes that boost stability and simplify the production
   process are needed for perovskite solar cells (PSCs). We codeposited perovskite
   and hole-selective contact while protecting the perovskite to enable deposition
@@ -52,6 +54,7 @@ links:
 tags:
   - Perovskite Solar Cells
   - High Impact
+  - Featured
 summary: "Breakthrough research achieving >95% PCE retention after 2000 hours in perovskite solar cells through innovative ALD-SnOx technique"
 image:
   caption: 'Perovskite Solar Cell Structure'

@@ -13,7 +13,10 @@ sections:
       filters:
         folders:
           - publication
-        featured: true    # Use featured flag instead of tag
+        categories:
+          - Featured Research
+      sort_by: 'weight'    # Sort by weight parameter
+      sort_ascending: true  # Lower weight appears first
     design:
       columns: '2'
       view: showcase
@@ -27,7 +30,8 @@ sections:
       filters:
         folders:
           - publication
-        featured: false   # Show non-featured publications
+        exclude_categories:
+          - Featured Research
       sort_by: 'date'
       sort_ascending: false
     design:
