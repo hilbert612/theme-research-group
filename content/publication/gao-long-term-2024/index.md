@@ -1,5 +1,6 @@
 ---
 title: Long-term stability in perovskite solar cells through atomic layer deposition of tin oxide
+doi: "10.1126/science.adq8385"    # 添加 DOI
 authors:
   - Danpeng Gao      # 第一作者
   - Bo Li            # 第二作者

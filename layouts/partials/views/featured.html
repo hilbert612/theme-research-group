@@ -2,15 +2,21 @@
 <div class="featured-pub" style="display: flex; gap: 2rem; margin-bottom: 3rem;">
   <!-- 左侧内容区 -->
   <div style="flex: 3;">
-    <!-- 论文标题 -->
+    <!-- 文章标题带链接 -->
     <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0;">
-      <a href="{{ $item.RelPermalink }}" style="color: #1a73e8; text-decoration: none;">
-        {{ $item.Title }}
-      </a>
+      {{ with $item.Params.doi }}
+        <a href="https://doi.org/{{ . }}" target="_blank" style="color: #1a73e8; text-decoration: none;">
+          {{ $item.Title }}
+        </a>
+      {{ else }}
+        <a href="{{ $item.RelPermalink }}" style="color: #1a73e8; text-decoration: none;">
+          {{ $item.Title }}
+        </a>
+      {{ end }}
     </h3>
     
-    <!-- 作者列表 -->
-    <div style="color: #4d4d4d; font-size: 0.95rem; margin-bottom: 0.3rem;">
+    <!-- 作者列表-字号调小 -->
+    <div style="color: #4d4d4d; font-size: 0.85rem; margin-bottom: 0.3rem;">
       {{ with $item.Params.authors }}
         {{ delimit . ", " }}
       {{ end }}
@@ -25,8 +31,8 @@
         ({{ $item.Params.year }})
       {{ end }}
     </div>
-    
-    <!-- 研究摘要 -->
+
+    <!-- 摘要 -->
     {{ with $item.Params.summary }}
       <div style="color: #666; font-size: 0.9rem; line-height: 1.5;">
         {{ . | markdownify }}
@@ -34,7 +40,7 @@
     {{ end }}
   </div>
   
-  <!-- 右侧图片区 -->
+  <!-- 右侧图片 -->
   <div style="flex: 1;">
     {{ $image := "" }}
     {{ with $item.Params.image }}
