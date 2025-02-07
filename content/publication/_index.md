@@ -18,7 +18,7 @@ sections:
       sort_ascending: true
     design:
       columns: '1'    # 改为单列以获得更好的布局
-      view: featured  # 使用自定义视图
+      view: featured_scholar  # 更改为新的视图
       flip_alt_rows: false
 
   # 最近论文部分

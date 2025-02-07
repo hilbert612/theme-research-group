@@ -1,0 +1,35 @@
+{{/* Based on scholar view but adds summary between title and authors */}}
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  {{/* Title */}}
+  <span class="article-metadata li-cite-author">
+    <span>{{.Title}}</span>
+  </span>
+
+  {{/* Summary */}}
+  {{with .Params.summary}}
+  <div class="article-summary">
+    {{.}}
+  </div>
+  {{end}}
+
+  {{/* Authors */}}
+  <span class="article-metadata li-cite-author">
+    {{ partial "page_metadata_authors" . }}
+  </span>
+
+  {{/* Publication name */}}
+  {{ if .Params.publication }}
+  <span class="article-metadata li-cite-journal">
+    {{.Params.publication | markdownify}}
+  </span>
+  {{end}}
+
+  {{/* Links */}}
+  <div class="btn-links">
+    {{ partial "page_links" (dict "page" . "is_list" 1) }}
+  </div>
+
+</div>
