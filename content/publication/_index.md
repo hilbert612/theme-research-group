@@ -5,11 +5,47 @@ type: landing
 view: citation
 sections:
   - block: collection
-    id: posts
+    id: highlight-publications
+    content:
+      title: Highlight Publications
+      subtitle: ''
+      text: 'Check out my highlighted publications below!'
+      # Choose how many pages you would like to display (0 = all pages)
+      count: 0
+      # Filter on criteria
+      filters:
+        # The folders to display content from
+        folders:
+          - publication
+        author: ""
+        category: ""
+        tag: ""
+        publication_type: ""
+        publication: ""
+        featured_only: false
+        exclude_featured: false
+        exclude_future: false
+        exclude_past: false
+        # 添加根据 highlight 字段进行筛选的条件
+        highlight: true 
+        
+      # Choose how many pages you would like to offset by
+      # Useful if you wish to show the first item in the Featured widget
+      offset: 0
+      # Field to sort by, such as Date or Title
+      sort_by: 'Date'
+      sort_ascending: false
+    design:
+      # Choose a listing view
+      view: compact
+      # Choose single or dual column layout
+      columns: '1'
+  - block: collection
+    id: recent-publications
     content:
       title: Recent Publications
       subtitle: ''
-      text: 'Check out my recent blog posts below!'
+      text: 'Check out my highlighted publications below!'
       # Choose how many pages you would like to display (0 = all pages)
       count: 0
       # Filter on criteria
@@ -28,7 +64,7 @@ sections:
         exclude_past: false
       # Choose how many pages you would like to offset by
       # Useful if you wish to show the first item in the Featured widget
-      offset: 2
+      offset: 0
       # Field to sort by, such as Date or Title
       sort_by: 'Date'
       sort_ascending: false

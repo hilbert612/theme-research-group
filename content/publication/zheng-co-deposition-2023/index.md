@@ -19,5 +19,5 @@ publication_types:
 publication: '*Nature Energy*'
 links:
 - name: URL
-  url: https://www.nature.com/articles/s41560-023-01227-6
+  url: https://www.nature.com/articles/s41560-023-01227-6  
 ---
