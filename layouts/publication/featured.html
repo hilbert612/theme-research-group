@@ -1,0 +1,19 @@
+<div class="article-container">
+  <h3 class="article-title mb-1 mt-3">
+    <a href="{{$link}}">{{ .Title }}</a>
+  </h3>
+
+  {{with .Params.summary}}
+  <div class="article-summary">
+    {{.}}
+  </div>
+  {{end}}
+
+  <div class="article-metadata">
+    // ...existing code...
+  </div>
+
+  <div class="btn-links">
+    // ...existing code...
+  </div>
+</div>
