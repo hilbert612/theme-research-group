@@ -1,42 +1,47 @@
 ---
 title: Publications
-type: landing
-view: citation
+cms_exclude: true
+
+# View.
+#   1 = List
+#   2 = Compact
+#   3 = Card
+#   4 = Citation
+view: 4
+
+# Optional banner image (relative to `static/media/` folder).
+banner:
+  caption: ""
+  image: ""
+
 sections:
+  # Featured/Highlighted publications
   - block: collection
-    id: highlight-publications
+    id: featured
     content:
-      title: Highlight Publications
-      subtitle: ''
-      text: 'Featured research highlights from our group'
+      title: Featured Publications
       filters:
         folders:
           - publication
-        featured: true     # 确保这里设置为 true
-        highlight: true    # 确保这里设置为 true
-      sort_by: 'Date'
-      sort_ascending: false
+        featured_only: true
     design:
-      view: compact
-      columns: '1'
+      columns: '2'
+      view: card
+      flip_alt_rows: false
 
+  # Recent publications
   - block: collection
-    id: recent-publications
     content:
       title: Recent Publications
-      text: 'Our latest research publications'
       filters:
         folders:
           - publication
-        featured: false    # 确保这里设置为 false
-        highlight: false   # 确保这里设置为 false
-      sort_by: 'Date'
-      sort_ascending: false
+        exclude_featured: true
+      count: 0
+      offset: 0
+      order: desc
     design:
-      view: compact
-      columns: '1'
-banner:
-  caption: ''
-  image: ''
+      columns: '2'
+      view: citation
 ---
 
