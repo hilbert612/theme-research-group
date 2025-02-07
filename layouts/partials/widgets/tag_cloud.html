@@ -1,0 +1,60 @@
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+<div class="pub-filters">
+  {{/* 年份过滤器 */}}
+  <div class="filter-section">
+    <div class="filter-title">Year</div>
+    <div class="filter-tags year-tags">
+      {{ range (where site.Pages "Type" "publication").GroupByDate "2006" }}
+        <span class="filter-tag" data-filter="year-{{ .Key }}">
+          {{ .Key }} ({{ len .Pages }})
+        </span>
+      {{ end }}
+    </div>
+  </div>
+
+  {{/* 期刊过滤器 */}}
+  <div class="filter-section">
+    <div class="filter-title">Journal</div>
+    <div class="filter-tags journal-tags">
+      {{ range $name, $items := (where site.Pages "Type" "publication").GroupByParam "publication" }}
+        {{ if $name }}
+          <span class="filter-tag" data-filter="journal-{{ anchorize $name }}">
+            {{ $name }} ({{ len $items }})
+          </span>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+
+  {{/* 按字母顺序的标题索引 */}}
+  <div class="filter-section">
+    <div class="filter-title">Title Index</div>
+    <div class="filter-tags alpha-tags">
+      {{ range (seq 65 90) }}
+        <span class="filter-tag" data-filter="alpha-{{ printf "%c" . }}">
+          {{ printf "%c" . }}
+        </span>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+{{/* 添加JavaScript以处理过滤器交互 */}}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const filterTags = document.querySelectorAll('.filter-tag');
+  filterTags.forEach(tag => {
+    tag.addEventListener('click', function() {
+      this.classList.toggle('active');
+      filterPublications();
+    });
+  });
+});
+
+function filterPublications() {
+  // 过滤逻辑实现
+  // ...
+}
+</script>

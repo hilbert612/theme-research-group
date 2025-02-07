@@ -47,10 +47,11 @@
   
   .pub-venue {
     margin: 0.4rem 0;
-    font-size: 1.05rem;  // 增大字体
+    font-size: 1.2rem;      // 更大的字体
     font-weight: 500;
-    font-style: italic;  // 添加斜体
-    color: #087f23;  // 期刊名称使用绿色
+    font-style: italic;     // 斜体
+    color: #087f23;         // 绿色
+    line-height: 1.4;       // 增加行高
   }
   
   .author-list {
@@ -72,4 +73,40 @@
 /* Hover effect */
 .pub-list-item:hover {
   background-color: #f8f9fa;
+}
+
+/* 索引样式 */
+.pub-filters {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+  
+  .filter-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .filter-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    
+    .filter-tag {
+      padding: 0.2rem 0.8rem;
+      border-radius: 15px;
+      background: white;
+      border: 1px solid #ddd;
+      cursor: pointer;
+      
+      &:hover {
+        background: #e9ecef;
+      }
+      
+      &.active {
+        background: #2154a0;
+        color: white;
+      }
+    }
+  }
 }
