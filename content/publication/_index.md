@@ -21,6 +21,7 @@ sections:
         category: ""
         tag: ""
         publication_type: ""
+        publication: ""
         featured_only: false
         exclude_featured: false
         exclude_future: false
