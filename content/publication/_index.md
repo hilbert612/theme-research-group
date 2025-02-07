@@ -9,47 +9,27 @@ sections:
       title: Highlight Publications
       subtitle: ''
       text: 'Featured research highlights from our group'
-      count: 0
       filters:
         folders:
           - publication
-        author: ""
-        category: ""
-        tag: ""
-        publication_type: ""
-        publication: ""
-        featured_only: false
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        highlight: true
-      offset: 0
+        featured: true     # 确保这里设置为 true
+        highlight: true    # 确保这里设置为 true
       sort_by: 'Date'
       sort_ascending: false
     design:
       view: compact
       columns: '1'
+
   - block: collection
     id: recent-publications
     content:
       title: Recent Publications
-      subtitle: ''
       text: 'Our latest research publications'
-      count: 0
       filters:
         folders:
           - publication
-        author: ""
-        category: ""
-        tag: ""
-        publication_type: ""
-        publication: ""
-        featured_only: false
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        highlight: false
-      offset: 0
+        featured: false    # 确保这里设置为 false
+        highlight: false   # 确保这里设置为 false
       sort_by: 'Date'
       sort_ascending: false
     design:
