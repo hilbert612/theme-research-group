@@ -13,12 +13,15 @@ sections:
       filters:
         folders:
           - publication
-        featured: true
-      sort_by: 'date'
-      sort_ascending: false
+        featured: true      # Primary filter
+        categories:         # Additional filter
+          - Featured Research
+      count: 0             # Show all featured items
+      sort_by: 'weight'    # Sort by weight parameter
+      sort_ascending: true # Show lowest weight first
     design:
-      columns: '1'    # Full width for better readability
-      view: google_scholar    # Custom citation view
+      columns: '1'
+      view: google_scholar
       spacing:
         padding: ["20px", "0", "20px", "0"]
 
@@ -34,8 +37,8 @@ sections:
       sort_by: 'date'
       sort_ascending: false
     design:
-      columns: '1'    # Full width for better readability
-      view: google_scholar    # Custom citation view
+      columns: '1'
+      view: google_scholar
       spacing:
         padding: ["20px", "0", "20px", "0"]
 

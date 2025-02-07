@@ -25,8 +25,8 @@ publication_types:
 publication: '*Science*'
 doi: 10.1126/science.adq8385
 highlight: true   # 确保为 true
-featured: true    # 必需
-weight: 1         # 控制排序顺序
+featured: true    # This is crucial
+weight: 1         # Lower number appears first
 categories:
   - Featured Research
 abstract: Robust contact schemes that boost stability and simplify the production
@@ -52,7 +52,7 @@ links:
 - name: URL
   url: https://www.science.org/doi/10.1126/science.adq8385
 tags:
-  - Featured      # 必需
+  - Featured
   - Perovskite Solar Cells
   - High Impact
   - Featured
