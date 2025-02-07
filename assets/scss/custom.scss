@@ -46,9 +46,10 @@
   }
   
   .pub-venue {
-    margin: 0.3rem 0;
-    font-size: 0.95rem;
+    margin: 0.4rem 0;
+    font-size: 1.05rem;  // 增大字体
     font-weight: 500;
+    font-style: italic;  // 添加斜体
     color: #087f23;  // 期刊名称使用绿色
   }
   

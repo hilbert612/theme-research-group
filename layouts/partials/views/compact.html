@@ -13,7 +13,21 @@
   {{/* 作者列表 */}}
   <div class="author-list">
     {{ with $item.Params.authors }}
-      {{ delimit . ", " }}
+      {{ $authors := . }}
+      {{ $authorCount := len $authors }}
+      {{ if gt $authorCount 10 }}
+        {{/* 显示前4个作者 */}}
+        {{ range (first 4 $authors) }}
+          {{ . }},
+        {{ end }}
+        ... ,
+        {{/* 显示后4个作者 */}}
+        {{ range (last 4 $authors) }}
+          {{ . }}{{ if ne . (index (last 1 $authors) 0) }}, {{ end }}
+        {{ end }}
+      {{ else }}
+        {{ delimit . ", " }}
+      {{ end }}
     {{ end }}
   </div>
 
@@ -21,9 +35,6 @@
   {{ with $item.Params.publication }}
     <div class="pub-venue">
       {{ . }}
-      {{- if $item.Params.publication_short -}}
-        ({{ $item.Params.publication_short }})
-      {{- end -}}
     </div>
   {{ end }}
 
