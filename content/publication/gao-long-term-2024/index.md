@@ -25,8 +25,8 @@ publication_types:
 publication: '*Science*'
 doi: 10.1126/science.adq8385
 highlight: true   # 确保为 true
-featured: true    # Marks this as a featured publication
-weight: 1         # Lower number appears first in featured section
+featured: true    # This is crucial
+weight: 1         # Controls ordering in featured section
 categories:
   - Featured Research
 abstract: Robust contact schemes that boost stability and simplify the production

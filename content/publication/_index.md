@@ -13,8 +13,8 @@ sections:
       filters:
         folders:
           - publication
-        categories:
-          - Featured Research
+        featured: true     # Add this line
+        exclude_featured: false  # Add this line
       sort_by: 'weight'    # Sort by weight parameter
       sort_ascending: true  # Lower weight appears first
     design:
@@ -30,8 +30,8 @@ sections:
       filters:
         folders:
           - publication
-        exclude_categories:
-          - Featured Research
+        featured: false    # Add this line
+        exclude_featured: true   # Add this line
       sort_by: 'date'
       sort_ascending: false
     design:
